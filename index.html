@@ -1,0 +1,1095 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="yGxU0wk8YHLdtlEHM9XCXCVfk5HZzffF2N3U2eHk">
+
+    <title>Handmade</title>
+    <meta name="description" content="Artshop">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="../assets/img/artshop.png">
+
+    <link rel="stylesheet" href="../assets/user/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../assets/user/css/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="../assets/user/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../assets/user/css/reset.css" type="text/css">
+    
+    <link rel="stylesheet" href="../assets/user/css/slick.css" type="text/css">
+    <link rel="stylesheet" href="../assets/user/css/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="../assets/user/css/font-awesome.min.css" type="text/css">
+
+    <style>
+        .new_profile {
+            width: 80px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            display: none;
+            position: absolute;
+            right: 250px;
+            top: 80px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px #f9f9f9;
+            z-index: 9999;
+        }
+
+        .search_drop {
+            background: #ffffff;
+            width: 604px;
+            padding: 0;
+            max-height: 400px;
+            overflow: auto;
+            position: relative;
+            z-index: 999999;
+            border-radius: 3px;
+            border-width: 0 1px 1px 1px;
+            margin: 0 auto;
+            display: none;
+        }
+
+        .search_li_class {
+            margin: 10px 10px 10px;
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: normal;
+            font-family: Montserrat-Bold
+        }
+
+    </style>
+    
+</head>
+
+<body>
+
+<a href=" " class="fix_cart" id="cart_logo" style=" "></a>
+
+<div class="fixedMenuBurger">
+    <a class="burgerMenuLogo">
+        <img src="../assets/img/logo.png">
+    </a>
+    <div class="menuBurger">
+        <span></span>
+    </div>
+    <div class="fixedMenuBurgerLayout">
+        <a class="fixedMenuBurgerLayoutLogo">
+            <img src="../assets/img/logo.png">
+        </a>
+        <div class="fixedMenuBurgerLayoutLinks">
+            <div class="fixedMenuBurgerLayoutLinksLang">
+                <i class="fas fa-globe"></i>
+                                    <div class="LinksLang LinksLangActive">
+                        <a href=" ">  UZ</a>
+                    </div>
+                
+            </div>
+
+            
+
+                            <a href=" ">
+                    <i class="fas fa-shopping-cart"></i>
+                    Savatcha
+                </a>
+
+            
+                            <a href=""><i class="fas fa-heart"></i> Tanlangan mahsulotlar </a>
+            
+            <a href=" ">
+                <i class="fas fa-th-list"></i>
+                Кatalog
+            </a>
+            <a href="">
+                <i class="fas fa-paperclip"></i>
+                Infomarkaz
+            </a>
+            <a href="../uz/about.html">
+                <i class="fas fa-info-circle"></i>
+                Portal haqida
+            </a>
+            <a href=""><i class="fas fa-question-circle"></i>
+                Yordam
+            </a>
+
+                            <a href=" "><i class="fas fa-sign-in-alt"></i>
+                    Kirish
+                </a>
+                    </div>
+    </div>
+</div>
+<div class="header">
+    <div class="content">
+
+        <a href="#" class="logo_mmxtv" style=" width: 250px; height: 150px " ></a>
+        <a href= " " class="logo"></a>
+        <div class="b1" id="menu_nav">
+
+            <div><a href="../uz/catalog.html" class="t1">
+                    Кatalog
+                </a></div>
+            <div><a href="../uz/catalog.html" class="t1">
+                    Infomarkaz
+
+                </a></div>
+            <div><a href="../uz/about.html" class="t1">
+                    Portal haqida
+
+                </a></div>
+            <div><a href="../uz/help.html" class="t1">
+                    Yordam
+
+                </a></div>
+        </div>
+        <div class="b2">
+                            <a style="text-decoration: none;color: #FFFFFF;font-size: 22px" href=" ">  UZ</a>
+                                        <a href=" " class="tcart"></a>
+                                    <a href="" class="like"></a>
+                                                        <a class="profile " href=" " style="text-decoration: none;font-family: Montserrat-Regular;font-size: 14px;
+                color: #888888;"></a>
+            
+        </div>
+    </div>
+</div>
+<div class="headerSearchContent">
+    <div class="headerSearchContentTitle">Qo'l ishlari olamida <br> sizning yo'lboshchingiz</div>
+    <div style="position: relative;">
+        <input onkeyup="searchByName(1)" id="searching_item_1" maxlength="32" type="text" class="search" placeholder="Mahsulot qidirish">
+        <ul id="search_drop_1" class="search_drop"></ul>
+    </div>
+    <div id="go_to_catalog_id" class="b1" style="">
+        <a href="" class="list_ico"></a>
+        <a href="" style="color: #FFFFFF" class="t2">Mahsulotlar ro'yxatiga o'tish</a>
+    </div>
+</div>
+<div class="vertical slider" data-slick="{&quot;slidesToShow&quot;: 1, &quot;slidesToScroll&quot;: 1}">
+    <div>
+        <div class="p1">
+        <!-- <div class="t1">Qo'l ishlari olamida <br> sizning yo'lboshchingiz</div> -->
+        <!-- <div style="position: relative;">
+                <input onkeyup="searchByName(1)" id="searching_item_1" maxlength="32" type="text" class="search" placeholder="Mahsulot qidirish">
+                <ul class="search_drop"></ul>
+            </div>
+            <div id="go_to_catalog_id" class="b1" style="">
+                <a href="https://artshop.uzedu.uz/uz/catalog" class="list_ico"></a>
+                <a href="https://artshop.uzedu.uz/uz/catalog" style="color: #FFFFFF"
+                   class="t2">Mahsulotlar ro&#039;yxatiga o&#039;tish</a>
+            </div> -->
+        </div>
+    </div>
+    <div>
+        <div class="p1" style="background: url(../assets/img/index/1.2.png) 50% 0px no-repeat;background-size: cover!important;">
+        </div>
+    </div>
+    <div>
+        <div class="p1" style="background: url(../assets/img/index/2.2.png) 50% 0px no-repeat;background-size: cover!important;">
+        </div>
+    </div>
+</div>
+<input type="hidden" id="auth_check_id" value="">
+<input type="hidden" id="login_id" value="https://artshop.uzedu.uz/uz/login">
+    <input type="hidden" value="7" id="catalog_number_id">
+    <input type="hidden" value="8" id="popular_number_id">
+    <input type="hidden" value="8" id="new_number_id">
+
+
+    <div class="p3">
+        <div class="content">
+            <div class="t1 t1_pop">Yangi tovarlar
+                <div class="bg_pattern"></div>
+            </div>
+            <div class="b1" id="new_tag_id">
+
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Ko%27za_idish/1637306027.5588.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/2" class="product_name">
+                Qo'l ishlanmalari
+            </a>
+            <div class="in_stock">Sotuvda:<span> 5 ta</span></div>
+            <div class="in_stock">Narxi:<span> 65 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(2,1,0)" class="action tcart"></div>
+            <div class="action phone" id="contact_2"></div>
+
+
+                            <div id="wish_list_2" onclick="addProductToWishList(2)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Anor/1637306280.988.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/3" class="product_name">
+                Sopol idishlar
+            </a>
+            <div class="in_stock">Sotuvda:<span> 4 ta</span></div>
+            <div class="in_stock">Narxi:<span> 40 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(3,1,1)" class="action tcart"></div>
+            <div class="action phone" id="contact_3"></div>
+
+
+                            <div id="wish_list_3" onclick="addProductToWishList(3)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Savatcha/1637306416.2712.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/4" class="product_name">
+                Savatcha
+            </a>
+            <div class="in_stock">Sotuvda:<span> 10 ta</span></div>
+            <div class="in_stock">Narxi:<span> 65 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(4,1,0)" class="action tcart"></div>
+            <div class="action phone" id="contact_4"></div>
+
+
+                            <div id="wish_list_4" onclick="addProductToWishList(4)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Ziravorlar_uchun_qovoqcha_idish/1637306551.7808.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/5" class="product_name">
+                Ziravorlar uchun qovoqcha idish
+            </a>
+            <div class="in_stock">Sotuvda:<span> 15 ta</span></div>
+            <div class="in_stock">Narxi:<span> 25 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(5,1,1)" class="action tcart"></div>
+            <div class="action phone" id="contact_5"></div>
+
+
+                            <div id="wish_list_5" onclick="addProductToWishList(5)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Qovoqcha_toshbaqa/1637306686.2355.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/6" class="product_name">
+                Qovoqcha toshbaqa
+            </a>
+            <div class="in_stock">Sotuvda:<span> 13 ta</span></div>
+            <div class="in_stock">Narxi:<span> 100 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(6,1,1)" class="action tcart"></div>
+            <div class="action phone" id="contact_6"></div>
+
+
+                            <div id="wish_list_6" onclick="addProductToWishList(6)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Milliy_cholbobo/1637306882.2454.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/7" class="product_name">
+                Milliy cholbobo
+            </a>
+            <div class="in_stock">Sotuvda:<span> 11 ta</span></div>
+            <div class="in_stock">Narxi:<span> 65 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(7,1,1)" class="action tcart"></div>
+            <div class="action phone" id="contact_7"></div>
+
+
+                            <div id="wish_list_7" onclick="addProductToWishList(7)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Milliy_cholbobo/1637307052.2758.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/8" class="product_name">
+                Milliy cholbobo
+            </a>
+            <div class="in_stock">Sotuvda:<span> 12 ta</span></div>
+            <div class="in_stock">Narxi:<span> 50 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(8,1,1)" class="action tcart"></div>
+            <div class="action phone" id="contact_8"></div>
+
+
+                            <div id="wish_list_8" onclick="addProductToWishList(8)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Tillaqosh/1637307546.5184.png" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/9" class="product_name">
+                Tillaqosh
+            </a>
+            <div class="in_stock">Sotuvda:<span> 16 ta</span></div>
+            <div class="in_stock">Narxi:<span> 300 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(9,1,1)" class="action tcart"></div>
+            <div class="action phone" id="contact_9"></div>
+
+
+                            <div id="wish_list_9" onclick="addProductToWishList(9)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                            </div>
+
+                            <div class="btn" id="new_button_id" onclick="productPrePages('new')">Ko'proq tomosha qiling</div>
+                    </div>
+    </div>
+    <div class="p3">
+        <div class="content">
+            <div class="t1 t1_pop">Ommabop tovarlar
+                <div class="bg_pattern"></div>
+            </div>
+            <div class="t2">Qiziqarli bo'lishi mumkin bo'lgan mahsulotlar</div>
+            <div class="b1" id="popular_tag_id">
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Tillaqosh/1637307546.5184.png" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/9" class="product_name">
+                Tillaqosh
+            </a>
+            <div class="in_stock">Sotuvda:<span> 14 ta</span></div>
+            <div class="in_stock">Narxi:<span> 300 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(9,1,1)" class="action tcart"></div>
+            <div class="action phone" id="contact_9"></div>
+
+
+                            <div id="wish_list_9" onclick="addProductToWishList(9)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Gullar/1637657124.3478.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/10" class="product_name">
+                Gullar
+            </a>
+            <div class="in_stock">Sotuvda:<span> 10 ta</span></div>
+            <div class="in_stock">Narxi:<span> 500 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(10,1,0)" class="action tcart"></div>
+            <div class="action phone" id="contact_10"></div>
+
+
+                            <div id="wish_list_10" onclick="addProductToWishList(10)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Dekorativ_ko%27za_/1638622660.3342.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/39" class="product_name">
+                Dekorativ ko'za.
+            </a>
+            <div class="in_stock">Sotuvda:<span> 15 ta</span></div>
+            <div class="in_stock">Narxi:<span> 250 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(39,1,1)" class="action tcart"></div>
+            <div class="action phone" id="contact_39"></div>
+
+
+                            <div id="wish_list_39" onclick="addProductToWishList(39)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Oyoq_kiyimchlar/1638777438.8305.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/47" class="product_name">
+                Oyoq kiyimchlar
+            </a>
+            <div class="in_stock">Sotuvda:<span> 20 ta</span></div>
+            <div class="in_stock">Narxi:<span> 50 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(47,1,20)" class="action tcart"></div>
+            <div class="action phone" id="contact_47"></div>
+
+
+                            <div id="wish_list_47" onclick="addProductToWishList(47)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/guldasta/1638787703.5828.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/84" class="product_name">
+                guldasta
+            </a>
+            <div class="in_stock">Sotuvda:<span> 12 ta</span></div>
+            <div class="in_stock">Narxi:<span> 40 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(84,1,1)" class="action tcart"></div>
+            <div class="action phone" id="contact_84"></div>
+
+
+                            <div id="wish_list_84" onclick="addProductToWishList(84)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Zebigardon/1672115775.1609.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/2389" class="product_name">
+                Zebigardon
+            </a>
+            <div class="in_stock">Sotuvda:<span> 13 ta</span></div>
+            <div class="in_stock">Narxi:<span> 100 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(2389,1,1)" class="action tcart"></div>
+            <div class="action phone" id="contact_2389"></div>
+
+
+                            <div id="wish_list_2389" onclick="addProductToWishList(2389)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Anor_to%27plami/1672116103.7172.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/2390" class="product_name">
+                Anor to'plami
+            </a>
+            <div class="in_stock">Sotuvda:<span> 16 ta</span></div>
+            <div class="in_stock">Narxi:<span> 250 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(2390,1,1)" class="action tcart"></div>
+            <div class="action phone" id="contact_2390"></div>
+
+
+                            <div id="wish_list_2390" onclick="addProductToWishList(2390)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                                    <div class="product_cont">
+    <div class="product">
+        
+        <img src="../storage/seller/product/Yumshoq_o%27ynichoq/1672116340.8352.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://artshop.uzedu.uz/uz/product/2391" class="product_name">
+                Yumshoq o'yinchoq
+            </a>
+            <div class="in_stock">Sotuvda:<span> 17 ta</span></div>
+            <div class="in_stock">Narxi:<span> 60 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(2391,1,1)" class="action tcart"></div>
+            <div class="action phone" id="contact_2391"></div>
+
+
+                            <div id="wish_list_2391" onclick="addProductToWishList(2391)" class="action wishlist"></div>
+            
+        </div>
+    </div>
+</div>
+                
+            </div>
+                            <div class="btn" id="popular_button_id" onclick="productPrePages('popular')">Ko'proq tomosha qiling</div>
+            
+        </div>
+    </div>
+
+            <div class="p2">
+    <div class="content">
+        <div class="b1" id="catalog_tag_id">
+             
+                     
+                                    <a href="https://artshop.uzedu.uz/uz/catalog/1" class="b2" style="margin-bottom:20px ; color: #FFFFFF; display: block !important; background:url('../1.jpg') 50% 0px no-repeat;">
+                        <div class="overlay2"></div>
+                        <div class="t2 t2_1">Bezaklar</div>
+                    </a>
+                
+                     
+                                    <a href="https://artshop.uzedu.uz/uz/catalog/3" class="b3" style="margin-bottom:20px; color: #FFFFFF; display: block !important; background:url('../storage/catalog/16372974440391.jpg') 50% 0px no-repeat;">
+                        <div class="overlay2"></div>
+                        <div class="t2 t2_1">Sumkalar va aksessuarlar</div>
+                    </a>
+                
+                     
+                                    <a href="https://artshop.uzedu.uz/uz/catalog/4" class="b3" style="margin-bottom:20px; color: #FFFFFF; display: block !important; background:url('../storage/catalog/16372975159393.jpg') 50% 0px no-repeat;">
+                        <div class="overlay2"></div>
+                        <div class="t2 t2_1">Qo'g'irchoqlar va o'yinchoqlar</div>
+                    </a>
+                
+                     
+                                    <a href="https://artshop.uzedu.uz/uz/catalog/5" class="b3" style="margin-bottom:20px; color: #FFFFFF; display: block !important; background:url('../storage/catalog/16372988987311.jpg') 50% 0px no-repeat;">
+                        <div class="overlay2"></div>
+                        <div class="t2 t2_1">Aksessuarlar</div>
+                    </a>
+                
+                     
+                                    <a href="https://artshop.uzedu.uz/uz/catalog/6" class="b3" style="margin-bottom:20px; color: #FFFFFF; display: block !important; background:url('../storage/catalog/16372989492632.jpg') 50% 0px no-repeat;">
+                        <div class="overlay2"></div>
+                        <div class="t2 t2_1">Uy va ichki ko'rinishi uchun</div>
+                    </a>
+                
+                     
+                                    <a href="https://artshop.uzedu.uz/uz/catalog/7" class="b3" style="margin-bottom:20px; color: #FFFFFF; display: block !important; background:url('../storage/catalog/16372989862507.jpg') 50% 0px no-repeat;">
+                        <div class="overlay2"></div>
+                        <div class="t2 t2_1">Suvenirlar</div>
+                    </a>
+                
+                     
+                                    <a href="https://artshop.uzedu.uz/uz/catalog/8" class="b3" style="margin-bottom:20px; color: #FFFFFF; display: block !important; background:url('../storage/catalog/16372990198987.jpg') 50% 0px no-repeat;">
+                        <div class="overlay2"></div>
+                        <div class="t2 t2_1">Rasmlar</div>
+                    </a>
+                
+            
+
+        </div>
+                    <div class="btn" id="catalog_button_id" onclick="catalogPrePages()">Ko'proq tomosha qiling</div>
+        
+    </div>
+
+</div>
+    
+    <div class="p4">
+    <div class="content">
+        <div class="t1">Nega bizni tanlashingiz kerak?</div>
+        <div class="b1">
+            <div class="b2">
+                <div class="ico ico1"></div>
+                <div class="t2">Tez yetkazib berish</div>
+                <div class="t3">Katalogda mahsulotni tanlang <br> yoki qidiruvdan foydalaning</div>
+            </div>
+            <div class="b2">
+                <div class="ico ico2"></div>
+                <div class="t2">Oson to'lov</div>
+                <div class="t3">Mahsulotni savatga soling,<br> "Savatga qo'shish" tugmasini bosish orqali </div>
+            </div>
+            <div class="b2">
+                <div class="ico ico3"></div>
+                <div class="t2">Pulni qaytarish kafolati</div>
+                <div class="t3">Kerakli  miqdordagi tovarlarni <br> belgilangan tartibda buyurtma bering</div>
+            </div>
+            <div class="b2">
+                <div class="ico ico4"></div>
+                <div class="t2">Ajoyib sifat</div>
+                <div class="t3">Istagan narsangizni oling <br> qulay manzil</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="newsletter">
+    <div class="t1">Sayt yangiliklariga obuna bo'ling va yangiliklardan xabardor bo'ling</div>
+    <input type="text" class="mail_input" placeholder="E-pochtangizni kiriting">
+    <div class="send_btn">Obuna bo'lish</div>
+</div>
+<div class="footer">
+    <div class="content">
+        
+        <div class="b1">
+            <a href=" " class="footer_logo" ></a>
+        </div>
+        <div class="b1">
+            <a href="" class="">O‘zbekiston Respublikasi maktabgacha va maktab ta'limi vazirligi</a>  
+        </div>
+        <div class="b1">
+            <a href=" " class="t1">
+                Кatalog
+            </a>
+        </div>
+        <div class="b1">   
+            <a href=" " class="t1">
+                Infomarkaz
+            </a>
+        </div>
+        <div class="b1"><a href="" class="t1">
+                Portal haqida
+            </a>
+        </div>    
+        <div class="b1">
+            <a href="https://artshop.uzedu.uz/uz/help" class="t1">
+                Yordam
+            </a>
+        </div>   
+        <div class="b1">
+            <div class="t1">Kontaktlar</div>
+            <a href="" class="t3 t3_phone">+998 71 202-09-09</a>
+            <a href="" class="t3 t3_mail">info@uzedu.uz</a>
+        </div>
+        
+    </div>
+</div>
+<div class="popup" id="contacts">
+    <div class="fade"></div>
+    <div class="main_block">
+        <div class="t1" id="contact_title">Barkamol avlod</div>
+        <a id="contact_phone" class="call call_phone">+998 71 202-09-09</a>
+        <a id="contact_mail" class="call call_mail">info@uzedu.uz</a>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="../assets/user/js/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/user/js/sweetalert.js"></script>
+<script type="text/javascript" src="../assets/user/js/slick.js"></script>
+<script type="text/javascript" src="../assets/user/js/script.js"></script>
+<script type="text/javascript" src="../assets/user/js/app.js"></script>
+
+<script type="text/javascript" src="../assets/user/user.js"></script>
+<script type="text/javascript" src="../assets/user/cart.js"></script>
+<script src="../../kit.fontawesome.com/623c56bddb.js" crossorigin="anonymous"></script>
+    <script>
+
+        function productPrePages(state) {
+            let number = $('#' + state + '_number_id').val();
+
+            clearTimeout(t);
+            t = setTimeout(function () {
+                $.ajax({
+                    type: 'POST',
+                    url: '/ajax/get-products/item',
+                    data: {
+                        number: number,
+                        state: state
+                    },
+                    success: function (obj) {
+
+                        if (obj.product.length > 0) {
+
+                            $('#' + state + '_number_id').val(parseInt(number) + parseInt(obj.number));
+                        } else {
+                            $('#' + state + '_button_id').remove();
+                        }
+
+                        $.each(obj.product, function (index, element) {
+                            $('#' + state + '_tag_id').append(productCatalogHtml(element));
+                        })
+                    }
+                });
+            }, 500);
+        }
+
+        function productCatalogHtml(data) {
+
+            let text = '';
+            let url = " ".replace(':id', data.id);
+
+            let image_url = `/storage/${data.image}`
+
+            text = '<div class="product_cont">\n' +
+                '    <div class="product">\n' +
+                '        <img src="' + image_url + '" class="product_img">' +
+                '        <div class="b2">\n' +
+                '            <a href="' + url + '" class="product_name">\n' + data.name_uz +
+                '            </a>\n' +
+                '            <div class="in_stock">Sotuvda:<span> ' + data.quantity + ' ta</span></div>\n' +
+                '            <div class="in_stock">Narxi:<span> ' + number_format(data.price, null, null, " ") + ' so&#039;m</span></div>\n' +
+                '        </div>\n' +
+                '        <div class="b3">\n' +
+                '            <div onclick="addToCart(' + data.id + ',' + data.min + ',' + data.quantity + ')" class="action tcart"></div>\n' +
+                '            <div class="action phone" id="contact_' + data.id + '"></div>\n' +
+                '\n' +
+                '\n'
+            if (data.wish_list != null && $('#auth_check_id').val()) {
+                text += '                <div id="wish_list_' + data.id + '"' +
+                    '                     style="background-image: url("/assets/img/icons/heart.png");"' +
+                    '                     onclick="addProductToWishList(' + data.id + ')" class="action wishlist"></div>\n'
+            } else {
+                text += '                <div id="wish_list_' + data.id + '" onclick="addProductToWishList(' + data.id + ')"' +
+                    '                     class="action wishlist"></div>\n'
+            }
+            text += '</div>\n' +
+                '    </div>\n' +
+                '</div>'
+            return text;
+
+        }
+
+
+        function catalogPrePages() {
+            let number = $('#catalog_number_id').val();
+           
+            clearTimeout(t);
+            t = setTimeout(function () {
+                $.ajax({
+                    type: 'POST',
+                    url: '/ajax/get-catalogs/item',
+                    data: {
+                        number: number
+                    },
+                    success: function (obj) {
+                        if (obj.catalogs.length > 0) {
+                            $('#catalog_number_id').val(parseInt(number) + parseInt(obj.number));
+                        } else {
+                            $('#catalog_button_id').remove();
+                        }
+
+
+                        $.each(obj.catalogs, function (index, element) {
+                            $('#catalog_tag_id').append(createCatalogHtml(element));
+                        })
+
+
+                    }
+                });
+            }, 500);
+        }
+
+        function createCatalogHtml(data) {
+            let text = '';
+            let url = " ".replace(':catalog_id', data.id);
+            text = '<a href="' + url + '"' +
+                '                       class="b3"\n' +
+                '                       style=" color: #FFFFFF; background:url(/storage/' + data.image + ') no-repeat;width: 302px;\n' +
+                '                           height: 373px; margin-top: 10px; background-size: 302px 373px;">\n' +
+                '                        <div class="overlay2"></div>\n' +
+                '                        <div class="t2 t2_1">' + data.name_uz + '</div>\n' +
+                '                    </a>'
+            return text;
+        }
+
+
+        number_format = (number, decimals, dec_point, thousands_sep) => {
+
+            number = (number + '').replace(/[^0-9+\-Ee.]/g, '');
+            var n = !isFinite(+number) ? 0 : +number,
+                prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
+                sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
+                dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
+                s = '',
+                toFixedFix = function (n, prec) {
+                    var k = Math.pow(10, prec);
+                    return '' + Math.round(n * k) / k;
+                };
+            // Fix for IE parseFloat(0.55).toFixed(0) = 0;
+            s = (prec ? toFixedFix(n, prec) : '' + Math.round(n)).split('.');
+            if (s[0].length > 3) {
+                s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+            }
+            if ((s[1] || '').length < prec) {
+                s[1] = s[1] || '';
+                s[1] += new Array(prec - s[1].length + 1).join('0');
+            }
+            return s.join(dec);
+        }
+        addToCart = (product_id, product_min_order, quantity = -1) => {
+
+            if (quantity == 0) {
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 2000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.addEventListener('mouseenter', Swal.stopTimer)
+                        toast.addEventListener('mouseleave', Swal.resumeTimer)
+                    }
+                })
+                Toast.fire({
+                    icon: 'warning',
+                    title: 'Maxsulot yo&#039;q'
+                })
+            } else {
+                clearTimeout(t);
+                t = setTimeout(function () {
+                    let product_quantity = null;
+                    if ($('#product_quantity').length == 0) {
+                        product_quantity = product_min_order
+                    } else {
+                        if ($('#product_quantity').val() == 0) {
+                            product_quantity = product_min_order
+                        } else {
+                            product_quantity = $('#product_quantity').val()
+                        }
+                    }
+                    $.ajax({
+                        type: 'POST',
+                        url: '/ajax/cart-add',
+                        data: {
+                            id: product_id,
+                            quantity: product_quantity
+                        },
+                        success: function (obj) {
+
+                            const Toast = Swal.mixin({
+                                toast: true,
+                                position: 'top-end',
+                                showConfirmButton: false,
+                                timer: 2000,
+                                timerProgressBar: true,
+                                didOpen: (toast) => {
+                                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                                }
+                            })
+
+                            if (obj.status == true) {
+                                $('#cart_logo').css('background', 'url(/assets/img/icons/full_cart.svg) #fbb03b 50% 50% no-repeat')
+
+                                Toast.fire({
+                                    icon: 'success',
+                                    title: 'Mahsulot savatchaga qo’shildi'
+                                })
+                            } else {
+                                Toast.fire({
+                                    icon: 'warning',
+                                    title: 'Maxsulot yo&#039;q'
+                                })
+                            }
+
+                        }
+                    })
+                }, 400);
+            }
+
+        }
+
+        addProductToWishList = (id) => {
+            clearTimeout(t);
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+
+            $('#wish_list_svg_id').toggleClass("unclickable");
+            if ($('#auth_check_id').val()) {
+                t = setTimeout(function () {
+                    $.ajax({
+                        type: 'post',
+                        url: '/ajax/wish-list-add',
+                        data: {
+                            wish_list_id: id
+                        },
+                        success: function (obj) {
+
+                            if (obj.status != false) {
+                                $('#wish_list_' + id).css("background-image", "url('/assets/img/icons/heart.png')");
+                                Toast.fire({
+                                    icon: 'success',
+                                    title: 'Mahsulot tanlanganlar ro’yxatiga qo’shildi'
+                                })
+
+                            } else {
+                                $('#wish_list_' + id).removeAttr("style");
+                                Toast.fire({
+                                    icon: 'success',
+                                    title: 'Mahsulot tanlanganlar ro&#039;yxatidan muvaffaqiyatli o&#039;chirildi'
+                                })
+
+                            }
+
+                        }
+                    });
+                }, 350);
+            } else {
+                window.location = $('#login_id').val()
+            }
+
+        }
+        removeProductToWishList = (id) => {
+            if ($('#auth_check_id').val()) {
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.addEventListener('mouseenter', Swal.stopTimer)
+                        toast.addEventListener('mouseleave', Swal.resumeTimer)
+                    }
+                })
+                t = setTimeout(function () {
+                    $.ajax({
+                        type: 'post',
+                        url: '/ajax/wish-list-remove',
+                        data: {
+                            wish_list_id: id
+                        },
+                        success: function (obj) {
+                            Toast.fire({
+                                icon: 'success',
+                                title: 'Mahsulot tanlanganlar ro&#039;yxatidan muvaffaqiyatli o&#039;chirildi'
+                            })
+                            $('#wish_list_' + id).remove()
+                        }
+                    });
+                }, 350);
+            } else {
+                window.location = "/login"
+            }
+
+        }
+    </script>
+
+
+
+<script>
+
+    $(".vertical").not('.slick-initialized').slick({
+        dots: true,
+        vertical: true,
+        slidesToShow: 1,
+
+        slidesToScroll: 1,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+
+    });
+    let search_time;
+
+    function searchByName(id) {
+
+
+        clearTimeout(search_time)
+        search_time = setTimeout(function () {
+            let search = $('#searching_item_' + id).val().trim();
+
+            if (search.length > 0) {
+                $.ajax({
+                    type: 'POST',
+                    url: '/ajax/search-products',
+                    data: {
+                        search: search,
+                    },
+
+                    success: function (obj) {
+
+                        if (obj.products.length > 0) {
+                            // switch (id) {
+                            //     case 1 :
+                            //         $('#search_drop_2').css('display', 'none')
+                            //         $('#search_drop_2').html(' ')
+                            //         $('#search_drop_3').css('display', 'none')
+                            //         $('#search_drop_3').html(' ')
+                            //
+                            //         $('#searching_item_2').val(' ');
+                            //         $('#searching_item_3').val(' ');
+                            //         break
+                            //     case 2 :
+                            //         $('#search_drop_1').css('display', 'none')
+                            //         $('#search_drop_1').html(' ')
+                            //         $('#search_drop_3').css('display', 'none')
+                            //         $('#search_drop_3').html(' ')
+                            //
+                            //         $('#searching_item_1').val(' ');
+                            //         $('#searching_item_3').val(' ');
+                            //         break
+                            //     case 3 :
+                            //         $('#search_drop_1').css('display', 'none')
+                            //         $('#search_drop_1').html(' ')
+                            //         $('#search_drop_2').css('display', 'none')
+                            //         $('#search_drop_2').html(' ')
+                            //
+                            //         $('#searching_item_1').val(' ');
+                            //         $('#searching_item_2').val(' ');
+                            //         break
+                            // }
+                            $('#go_to_catalog_id').css('display', 'none')
+                            $('#search_drop_' + id).css('display', 'block')
+                            $('#search_drop_' + id).html(' ')
+                            $.each(obj.products, function (index, value) {
+                                let url = " ".replace(':id', value.id);
+                                let text = ' <li class="search_li_class">\n' +
+                                    '        <a style="color: #999999;display: inline-flex;" href="' + url + '">\n' +
+                                    '        <img width="40" height="40" src="/storage/' + value.image + '" alt="" >\n' +
+                                    '        <span style="margin-left: 30px">' + value.name_uz + '</span>\n' +
+                                    '        </a>\n' +
+                                    '        </li>'
+
+                                $('#search_drop_' + id).append(text)
+
+                            })
+                        } else {
+                            $('#go_to_catalog_id').css('display', 'none')
+                            $('#search_drop_' + id).css('display', 'block')
+                            $('#search_drop_' + id).html(' ')
+                            let text = ' <li class="search_li_class">\n' +
+                                '        <a style="color: #999999;display: inline-flex;" >\n' +
+                                '        <span style="margin-left: 30px">' + ' Mahsulot topilmadi ' + '</span>\n' +
+                                '        </a>\n' +
+                                '        </li>'
+
+                            $('#search_drop_' + id).append(text)
+                        }
+
+                    }
+
+                });
+            } else {
+                $('#go_to_catalog_id').css('display', 'flex')
+                $('#search_drop_' + id).css('display', 'none')
+                $('#search_drop_' + id).html(' ')
+            }
+        }, 500);
+
+
+    }
+
+</script>
+
+</body></html>
