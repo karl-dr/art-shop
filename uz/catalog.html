@@ -1,0 +1,812 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="Aw1vdHQ7UkEjYR9Vu64S9U0HC9oPvhZjzUfBkWBJ">
+
+    <title>Handmade</title>
+    <meta name="description" content="Artshop">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="../../assets/img/artshop.png">
+    <link rel="stylesheet" href="../../assets/user/css/style.css" type="text/css">
+
+    <link rel="stylesheet" href="../../assets/user/css/jquery-ui.css" type="text/css">
+    
+    <link rel="stylesheet" href="../../../qgxM8mm87Wx7.com/ajax/libs/normalize/47rFr5YbhPLA.0/zgwUUGpv034f.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/user/css/normalize.css" type="text/css">
+    
+    <link rel="stylesheet" href="../../assets/user/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/user/css/rating.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/user/css/slick.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/user/css/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="../../../uZSHVe0IyEi8.com/font-awesome/e5R3if2nnefq.0/css/dO4vfEhmvrWl.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/user/css/font-awesome.min.css" type="text/css">
+    
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=4446c929-6dcd-441a-9315-0a7af8f79114&amp;lang=en_US" type="text/javascript">
+    </script>
+
+
+    <style>
+        .new_profile {
+            width: 80px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            display: none;
+            position: absolute;
+            right: 250px;
+            top: 80px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px #f9f9f9;
+            z-index: 9999;
+        }
+
+
+    </style>
+    
+</head>
+
+<body>
+
+<a href="https://rl9xMsDOfmaL.uz/uz/cart" class="fix_cart" id="cart_logo" style=" "></a>
+
+<div class="header header_pages">
+    <div class="content">
+        <a href="https://rl9xMsDOfmaL.uz/uz" class="logo"></a>
+        <div class="b1" id="menu_nav">
+
+            <div><a href="https://rl9xMsDOfmaL.uz/uz/catalog" class="t1">
+                    КATALOG
+                </a></div>
+            <div><a href="https://rl9xMsDOfmaL.uz/uz/information-center" class="t1">
+                    Infomarkaz
+
+                </a></div>
+            <div><a href="https://rl9xMsDOfmaL.uz/uz/about" class="t1">
+                    Portal haqida
+
+                </a></div>
+            <div><a href="https://rl9xMsDOfmaL.uz/uz/help" class="t1">
+                    Yordam
+
+                </a></div>
+        </div>
+
+        <div class="b2">
+
+
+                            <a style="text-decoration: none;color: #FFFFFF;font-size: 22px" href="https://rl9xMsDOfmaL.uz/ru/catalog">  UZ</a>
+                                        <a href="https://rl9xMsDOfmaL.uz/uz/cart" class="tcart"></a>
+                                    <a href="https://rl9xMsDOfmaL.uz/uz/login" class="like"></a>
+                                        
+            
+                <a class="profile " href="https://rl9xMsDOfmaL.uz/uz/login" style="text-decoration: none;font-family: Montserrat-Regular;font-size: 14px;
+                color: #888888;"></a>
+            
+        </div>
+    </div>
+</div>
+
+
+<input type="hidden" id="auth_check_id" value="">
+<input type="hidden" id="login_id" value="https://rl9xMsDOfmaL.uz/uz/login">
+    <div class="catalog">
+        <div class="content">
+            <div class="navi">
+                <a href="https://rl9xMsDOfmaL.uz/uz" class="navi_point">Bosh sahifa</a>
+                <a class="navi_point">Кatalog</a>
+
+            </div>
+            <div class="page_title">Кatalog</div>
+            <div class="b5">
+
+
+                <div class="filter">
+                    <div class="t1">Filtrlash</div>
+
+
+
+
+
+                    <div class="filter_sect" id="savdo_way">
+                        <div class="t2">Savdo turi</div>
+                        <div class="check_cnt">
+                            <input type="checkbox" value="chakana"><label for="selling_type_1">Chakana savdo</label>
+                        </div>
+                        <div class="check_cnt">
+                            <input type="checkbox" value="ommaviy"><label for="selling_type_2">Ulgurji savdo</label>
+                        </div>
+                        <div class="check_cnt">
+                            <input type="checkbox" value="chakana_ommaviy"><label for="selling_type_3">Ulgurji va chakana savdo</label>
+                        </div>
+
+                    </div>
+
+                    <div class="filter_sect" id="region">
+                        <div class="t2">Viloyat</div>
+                                                                                    <div class="check_cnt">
+                                    <input id="region_1" type="checkbox" name="region[]" value="1">
+                                    <label for="region_1">Toshkent</label>
+                                </div>
+                                                            <div class="check_cnt">
+                                    <input id="region_3" type="checkbox" name="region[]" value="3">
+                                    <label for="region_3">Andijon viloyati</label>
+                                </div>
+                                                            <div class="check_cnt">
+                                    <input id="region_4" type="checkbox" name="region[]" value="4">
+                                    <label for="region_4">Buxoro viloyati</label>
+                                </div>
+                                                            <div class="check_cnt">
+                                    <input id="region_5" type="checkbox" name="region[]" value="5">
+                                    <label for="region_5">Fargʻona viloyati</label>
+                                </div>
+                                                            <div class="check_cnt">
+                                    <input id="region_6" type="checkbox" name="region[]" value="6">
+                                    <label for="region_6">Jizzax viloyati</label>
+                                </div>
+                                                            <div class="check_cnt">
+                                    <input id="region_7" type="checkbox" name="region[]" value="7">
+                                    <label for="region_7">Xorazm viloyati</label>
+                                </div>
+                                                            <div class="check_cnt">
+                                    <input id="region_8" type="checkbox" name="region[]" value="8">
+                                    <label for="region_8">Namangan viloyati</label>
+                                </div>
+                                                            <div class="check_cnt">
+                                    <input id="region_9" type="checkbox" name="region[]" value="9">
+                                    <label for="region_9">Navoiy viloyati</label>
+                                </div>
+                                                            <div class="check_cnt">
+                                    <input id="region_10" type="checkbox" name="region[]" value="10">
+                                    <label for="region_10">Qashqadaryo viloyati</label>
+                                </div>
+                                                            <div class="check_cnt">
+                                    <input id="region_11" type="checkbox" name="region[]" value="11">
+                                    <label for="region_11">Qoraqalpogʻiston Respublikasi</label>
+                                </div>
+                                                            <div class="check_cnt">
+                                    <input id="region_12" type="checkbox" name="region[]" value="12">
+                                    <label for="region_12">Samarqand viloyati</label>
+                                </div>
+                                                            <div class="check_cnt">
+                                    <input id="region_13" type="checkbox" name="region[]" value="13">
+                                    <label for="region_13">Sirdaryo viloyati</label>
+                                </div>
+                                                            <div class="check_cnt">
+                                    <input id="region_14" type="checkbox" name="region[]" value="14">
+                                    <label for="region_14">Toshkent viloyati</label>
+                                </div>
+                                                            <div class="check_cnt">
+                                    <input id="region_15" type="checkbox" name="region[]" value="15">
+                                    <label for="region_15">Surxondaryo viloyati</label>
+                                </div>
+                                                    
+                    </div>
+
+                    <div class="filter_sect 1">
+                        <div class="t2">Tuman</div>
+                        <div id="districts">
+
+                        </div>
+
+                    </div>
+
+                    <div class="filter_sect" id="payment_way">
+                        <div class="t2">To'lov turi</div>
+                        <div class="check_cnt">
+                            <input type="checkbox" id="payment_cash" name="payment[]" value="cash"><label for="payment_cash">Naqd pul bilan to'lash</label>
+                        </div>
+                        <div class="check_cnt">
+                            <input type="checkbox" name="payment[]" id="payment_bank" value="bank"><label for="payment_bank">Bank orqali to'lash</label>
+                        </div>
+                        <div class="check_cnt">
+                            <input type="checkbox" name="payment[]" id="payment_online" value="online"><label for="payment_online">Click orqali to'lash</label>
+                        </div>
+
+                    </div>
+
+                    <div class="filter_sect">
+                        <div class="t2">Narxi</div>
+                        <div id="price-slider">
+
+                            <div id="slider-range"></div>
+                            <div class="box">
+
+                                <input type="text" id="amount-min" name="min" readonly="">
+                                <input type="text" id="amount-max" name="max" readonly="">
+                            </div>
+                        </div>
+                        <button type="button" onclick="searchProducts()" style="display: block" class="btn">Qabul qilish</button>
+                        <a href="https://rl9xMsDOfmaL.uz/uz/catalog" class="btn clear" style="display: block">Qayta tiklash</a>
+
+                    </div>
+                </div>
+
+                <div class="b6">
+                                            <div class="b4" id="products">
+                                                            <div class="prod_cont_cat">
+    <div class="product">
+        <img src="../../storage/seller/product/Ko%27za_idish/1637306027.5588.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://rl9xMsDOfmaL.uz/uz/product/2" class="product_name">
+                Qo'l ishlanmalari
+            </a>
+            <div class="in_stock">Sotuvda:<span> 10 ta</span></div>
+            <div class="in_stock">Narxi:<span> 65 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(2,1,0)" class="action tcart"></div>
+            <div class="action phone"></div>
+                            <div id="wish_list_2" onclick="addProductToWishList(2)" class="action wishlist"></div>
+                    </div>
+    </div>
+</div>
+                                                            <div class="prod_cont_cat">
+    <div class="product">
+        <img src="../../storage/seller/product/Anor/1637306280.988.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://rl9xMsDOfmaL.uz/uz/product/3" class="product_name">
+                Anor
+            </a>
+            <div class="in_stock">Sotuvda:<span> 15 ta</span></div>
+            <div class="in_stock">Narxi:<span> 40 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(3,1,1)" class="action tcart"></div>
+            <div class="action phone"></div>
+                            <div id="wish_list_3" onclick="addProductToWishList(3)" class="action wishlist"></div>
+                    </div>
+    </div>
+</div>
+                                                            <div class="prod_cont_cat">
+    <div class="product">
+        <img src="../../storage/seller/product/Savatcha/1637306416.2712.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://rl9xMsDOfmaL.uz/uz/product/4" class="product_name">
+                Savatcha
+            </a>
+            <div class="in_stock">Sotuvda:<span> 5 ta</span></div>
+            <div class="in_stock">Narxi:<span> 65 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(4,1,0)" class="action tcart"></div>
+            <div class="action phone"></div>
+                            <div id="wish_list_4" onclick="addProductToWishList(4)" class="action wishlist"></div>
+                    </div>
+    </div>
+</div>
+                                                            <div class="prod_cont_cat">
+    <div class="product">
+        <img src="../../storage/seller/product/Ziravorlar_uchun_qovoqcha_idish/1637306551.7808.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://rl9xMsDOfmaL.uz/uz/product/5" class="product_name">
+                Ziravorlar uchun qovoqcha idish
+            </a>
+            <div class="in_stock">Sotuvda:<span> 12 ta</span></div>
+            <div class="in_stock">Narxi:<span> 25 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(5,1,1)" class="action tcart"></div>
+            <div class="action phone"></div>
+                            <div id="wish_list_5" onclick="addProductToWishList(5)" class="action wishlist"></div>
+                    </div>
+    </div>
+</div>
+                                                            <div class="prod_cont_cat">
+    <div class="product">
+        <img src="../../storage/seller/product/Qovoqcha_toshbaqa/1637306686.2355.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://rl9xMsDOfmaL.uz/uz/product/6" class="product_name">
+                Qovoqcha toshbaqa
+            </a>
+            <div class="in_stock">Sotuvda:<span> 13 ta</span></div>
+            <div class="in_stock">Narxi:<span> 100 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(6,1,1)" class="action tcart"></div>
+            <div class="action phone"></div>
+                            <div id="wish_list_6" onclick="addProductToWishList(6)" class="action wishlist"></div>
+                    </div>
+    </div>
+</div>
+                                                            <div class="prod_cont_cat">
+    <div class="product">
+        <img src="../../storage/seller/product/Milliy_cholbobo/1637306882.2454.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://rl9xMsDOfmaL.uz/uz/product/7" class="product_name">
+                Milliy cholbobo
+            </a>
+            <div class="in_stock">Sotuvda:<span> 18 ta</span></div>
+            <div class="in_stock">Narxi:<span> 65 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(7,1,1)" class="action tcart"></div>
+            <div class="action phone"></div>
+                            <div id="wish_list_7" onclick="addProductToWishList(7)" class="action wishlist"></div>
+                    </div>
+    </div>
+</div>
+                                                            <div class="prod_cont_cat">
+    <div class="product">
+        <img src="../../storage/seller/product/Milliy_cholbobo/1637307052.2758.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://rl9xMsDOfmaL.uz/uz/product/8" class="product_name">
+                Milliy cholbobo
+            </a>
+            <div class="in_stock">Sotuvda:<span> 17 ta</span></div>
+            <div class="in_stock">Narxi:<span> 50 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(8,1,1)" class="action tcart"></div>
+            <div class="action phone"></div>
+                            <div id="wish_list_8" onclick="addProductToWishList(8)" class="action wishlist"></div>
+                    </div>
+    </div>
+</div>
+                                                            <div class="prod_cont_cat">
+    <div class="product">
+        <img src="../../storage/seller/product/Tillaqosh/1637307546.5184.png" class="product_img">
+        <div class="b2">
+            <a href="https://rl9xMsDOfmaL.uz/uz/product/9" class="product_name">
+                Tillaqosh
+            </a>
+            <div class="in_stock">Sotuvda:<span> 16 ta</span></div>
+            <div class="in_stock">Narxi:<span> 300 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(9,1,1)" class="action tcart"></div>
+            <div class="action phone"></div>
+                            <div id="wish_list_9" onclick="addProductToWishList(9)" class="action wishlist"></div>
+                    </div>
+    </div>
+</div>
+                                                            <div class="prod_cont_cat">
+    <div class="product">
+        <img src="../../storage/seller/product/Gullar/1637657124.3478.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://rl9xMsDOfmaL.uz/uz/product/10" class="product_name">
+                Gullar
+            </a>
+            <div class="in_stock">Sotuvda:<span> 20 ta</span></div>
+            <div class="in_stock">Narxi:<span> 500 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(10,1,0)" class="action tcart"></div>
+            <div class="action phone"></div>
+                            <div id="wish_list_10" onclick="addProductToWishList(10)" class="action wishlist"></div>
+                    </div>
+    </div>
+</div>
+                                                            <div class="prod_cont_cat">
+    <div class="product">
+        <img src="../../storage/seller/product/Qo%E2%80%99ziqorinlar/1637657245.3154.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://rl9xMsDOfmaL.uz/uz/product/11" class="product_name">
+                Qo’ziqorinlar
+            </a>
+            <div class="in_stock">Sotuvda:<span> 14 ta</span></div>
+            <div class="in_stock">Narxi:<span> 50 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(11,1,1)" class="action tcart"></div>
+            <div class="action phone"></div>
+                            <div id="wish_list_11" onclick="addProductToWishList(11)" class="action wishlist"></div>
+                    </div>
+    </div>
+</div>
+                                                            <div class="prod_cont_cat">
+    <div class="product">
+        <img src="../../storage/seller/product/Munchoqli_daraxt/1637657353.4331.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://rl9xMsDOfmaL.uz/uz/product/12" class="product_name">
+                Munchoqli daraxt
+            </a>
+            <div class="in_stock">Sotuvda:<span> 10 ta</span></div>
+            <div class="in_stock">Narxi:<span> 150 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(12,1,0)" class="action tcart"></div>
+            <div class="action phone"></div>
+                            <div id="wish_list_12" onclick="addProductToWishList(12)" class="action wishlist"></div>
+                    </div>
+    </div>
+</div>
+                                                            <div class="prod_cont_cat">
+    <div class="product">
+        <img src="../../storage/seller/product/Taxtacha/1638430994.9223.jpg" class="product_img">
+        <div class="b2">
+            <a href="https://rl9xMsDOfmaL.uz/uz/product/19" class="product_name">
+                Taxtacha
+            </a>
+            <div class="in_stock">Sotuvda:<span> 10 ta</span></div>
+            <div class="in_stock">Narxi:<span> 25 000 so'm</span></div>
+        </div>
+        <div class="b3">
+            <div onclick="addToCart(19,1,10)" class="action tcart"></div>
+            <div class="action phone"></div>
+                            <div id="wish_list_19" onclick="addProductToWishList(19)" class="action wishlist"></div>
+                    </div>
+    </div>
+</div>
+                                                    </div>
+                        
+                        
+                                    </div>
+
+            </div>
+
+        </div>
+    </div>
+
+<div class="newsletter">
+    <div class="t1">Sayt yangiliklariga obuna bo'ling va yangiliklardan xabardor bo'ling</div>
+    <input type="text" class="mail_input" placeholder="E-pochtangizni kiriting">
+    <div class="send_btn">Obuna bo'lish</div>
+</div>
+<div class="footer">
+    <div class="content">
+        
+        <div class="b1">
+            <a href="https://rl9xMsDOfmaL.uz/uz" class="footer_logo"></a>
+        </div>
+        <div class="b1">
+            <a href="" class="">O‘zbekiston Respublikasi maktabgacha va maktab ta'limi vazirligi</a>  
+        </div>
+        <div class="b1">
+            <a href="https://rl9xMsDOfmaL.uz/uz/catalog" class="t1">
+                КATALOG
+            </a>
+        </div>
+        <div class="b1">   
+            <a href="https://rl9xMsDOfmaL.uz/uz/information-center" class="t1">
+                Infomarkaz
+            </a>
+        </div>
+        <div class="b1"><a href="https://rl9xMsDOfmaL.uz/uz/about" class="t1">
+                Portal haqida
+            </a>
+        </div>    
+        <div class="b1">
+            <a href="https://rl9xMsDOfmaL.uz/uz/help" class="t1">
+                Yordam
+            </a>
+        </div>   
+        <div class="b1">
+            <div class="t1">Kontaktlar</div>
+            <a href="" class="t3 t3_phone">+998 71 202-09-09</a>
+            <a href="" class="t3 t3_mail">info@uzedu.uz</a>
+        </div>
+        
+    </div>
+</div>
+<div class="popup" id="contacts">
+    <div class="fade"></div>
+    <div class="main_block">
+        <div class="t1" id="contact_title">Barkamol avlod</div>
+        <a id="contact_phone" class="call call_phone">+998 71 202-09-09</a>
+        <a id="contact_mail" class="call call_mail">info@uzedu.uz</a>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="../../assets/user/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../assets/user/js/jquery.ui.min.js"></script>
+<script type="text/javascript" src="../../assets/user/js/sweetalert.js"></script>
+<script type="text/javascript" src="../../assets/user/js/slick.js"></script>
+<script type="text/javascript" src="../../assets/user/js/script.js"></script>
+
+<script type="text/javascript" src="../../assets/user/user.js"></script>
+<script type="text/javascript" src="../../assets/user/js/app.js"></script>
+<script type="text/javascript" src="../../assets/user/cart.js"></script>
+<script type="text/javascript" src="../../assets/user/video.js"></script>
+<script src="../../../D8yoDAQUeB0K.com/7yDKkQWDqF8H.js" crossorigin="anonymous"></script>
+<script>
+    addToCart = (product_id, product_min_order, quantity = -1) => {
+
+        if (quantity == 0) {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 2000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+            Toast.fire({
+                icon: 'warning',
+                title: 'Maxsulot yo&#039;q'
+            })
+        }
+        else
+        {
+            clearTimeout(t);
+            t = setTimeout(function () {
+                let product_quantity = null;
+                if ($('#product_quantity').length == 0) {
+                    product_quantity = product_min_order
+                } else {
+                    if ($('#product_quantity').val() == 0) {
+                        product_quantity = product_min_order
+                    } else {
+                        product_quantity = $('#product_quantity').val()
+                    }
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: '/ajax/cart-add',
+                    data: {
+                        id: product_id,
+                        quantity: product_quantity
+                    },
+                    success: function (obj) {
+
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'top-end',
+                            showConfirmButton: false,
+                            timer: 2000,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                                toast.addEventListener('mouseenter', Swal.stopTimer)
+                                toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            }
+                        })
+
+                        if (obj.status == true) {
+                            $('#cart_logo').css('background', 'url(/assets/img/icons/full_cart.svg) #fbb03b 50% 50% no-repeat')
+
+                            Toast.fire({
+                                icon: 'success',
+                                title: 'Mahsulot savatchaga qo’shildi'
+                            })
+                        } else {
+                            Toast.fire({
+                                icon: 'warning',
+                                title: 'Maxsulot yo&#039;q'
+                            })
+                        }
+
+                    }
+                })
+            }, 400);
+        }
+
+    }
+
+    addProductToWishList = (id) => {
+        clearTimeout(t);
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        $('#wish_list_svg_id').toggleClass("unclickable");
+        if ($('#auth_check_id').val()) {
+            t = setTimeout(function () {
+                $.ajax({
+                    type: 'post',
+                    url: '/ajax/wish-list-add',
+                    data: {
+                        wish_list_id: id
+                    },
+                    success: function (obj) {
+
+                        if (obj.status != false) {
+                            $('#wish_list_' + id).css("background-image", "url('/assets/img/icons/heart.png')");
+                            Toast.fire({
+                                icon: 'success',
+                                title: 'Mahsulot tanlanganlar ro’yxatiga qo’shildi'
+                            })
+
+                        } else {
+                            $('#wish_list_' + id).removeAttr("style");
+                            Toast.fire({
+                                icon: 'success',
+                                title: 'Mahsulot tanlanganlar ro&#039;yxatidan muvaffaqiyatli o&#039;chirildi'
+                            })
+
+                        }
+
+                    }
+                });
+            }, 350);
+        } else {
+            window.location = $('#login_id').val()
+        }
+
+    }
+
+    removeProductToWishList = (id) => {
+        if ($('#auth_check_id').val()) {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+            t = setTimeout(function () {
+                $.ajax({
+                    type: 'post',
+                    url: '/ajax/wish-list-remove',
+                    data: {
+                        wish_list_id: id
+                    },
+                    success: function (obj) {
+                        Toast.fire({
+                            icon: 'success',
+                            title: 'Mahsulot tanlanganlar ro&#039;yxatidan muvaffaqiyatli o&#039;chirildi'
+                        })
+                        $('#wish_list_' + id).remove()
+                    }
+                });
+            }, 350);
+        } else {
+            window.location = "/login"
+        }
+
+    }
+</script>
+    <script>
+
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 25000,
+                max: 500000,
+                values: [25000, 500000],
+                animate: true,
+                step: 1,
+                slide: function (event, ui) {
+                    $("#amount-min").val(ui.values[0]);
+                    $("#amount-max").val(ui.values[1]);
+                }
+            });
+
+
+            $("#amount-min").val($("#slider-range").slider("values", 0));
+            $("#amount-max").val($("#slider-range").slider("values", 1));
+        });
+
+        $('#region input[type="checkbox"]').on('change', function (event) {
+
+
+            let array_data = [];
+            let categories = $('#region input:checked');
+            if (categories.length > 0) {
+
+
+                for (let i = 0; i < categories.length; i++) {
+                    array_data.push($(categories[i]).attr('value'));
+                }
+
+                clearTimeout(t)
+                t = setTimeout(function () {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/ajax/district/search',
+                        data: {
+                            ids: array_data
+                        },
+
+                        success: function (obj) {
+                            $('#districts').html(" ")
+                            $.each(obj.data, function (index, value) {
+                                let name = 'name_' + 'uz'
+
+                                $('#districts').append(
+                                    '<div class="check_cnt">' +
+                                    '<input type="checkbox" name="district[]" id="district_' + value.id + '" value="' + value.id + '"><label for="district_' + value.id + '">' + value[name] + '</label>' +
+                                    '</div>'
+                                )
+                            })
+                        }
+                    });
+                }, 350);
+            } else {
+                $('#districts').html(" ")
+            }
+
+        })
+
+
+        function searchProducts() {
+            let array_selling_type = []
+            let array_region = []
+            let array_district = []
+            let array_payment = []
+            clearTimeout(t)
+            t = setTimeout(function () {
+                let regions = $('#region input:checked');
+                let districts = $('#districts input:checked');
+                let selling_types = $('#selling_types input:checked');
+                let payments = $('#payment_way input:checked');
+
+
+                for (let i = 0; i < regions.length; i++) {
+                    array_region.push($(regions[i]).attr('value'));
+                }
+                for (let i = 0; i < districts.length; i++) {
+                    array_district.push($(districts[i]).attr('value'));
+                }
+                for (let i = 0; i < selling_types.length; i++) {
+                    array_selling_type.push($(selling_types[i]).attr('value'));
+                }
+                for (let i = 0; i < payments.length; i++) {
+                    array_payment.push($(payments[i]).attr('value'));
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: '/ajax/search-in-catalogs',
+                    data: {
+                        catalog_id: $('#catalog').val(),
+                        selling_type: array_selling_type,
+                        region: array_region,
+                        district: array_district,
+                        max: $("#amount-max").val(),
+                        min: $("#amount-min").val(),
+                        payment: array_payment,
+
+                    },
+                    success: function (obj) {
+                        $('#products').html(" ")
+                        $.each(obj.products, function (index, value) {
+                            $('#products').append(createProductHtml(value))
+                        })
+                    }
+                });
+            }, 350);
+        }
+
+        function createProductHtml(data) {
+            let html = ''
+            let url = "https://rl9xMsDOfmaL.uz/uz/product/:id".replace(':id', data.id);
+            html = '<div class="prod_cont_cat">' +
+                '    <div class="product">' +
+                '        <img src="/storage/' + data.image + '" class="product_img">\n' +
+                '        <div class="b2">\n' +
+                '            <a  href="' + url + '"  class="product_name">' + data.name_uz+ '</a>' +
+                '            <div class="in_stock">Sotuvda:<span> ' + data.quantity + ' ta</span></div>\n' +
+                '            <div class="in_stock">Narxi:<span> ' + number_format(data.price, null, null, " ") + ' so&#039;m</span></div>\n' +
+                '        </div>\n' +
+                '        <div class="b3">\n' +
+                '            <div onclick="addToCart(' + data.id + ',' + data.min + ')" class="action tcart"></div>\n' +
+                '            <div class="action phone"></div>\n'
+            if (data.wish_list != null && $('#auth_check_id').val()) {
+                html += '                <div id="wish_list_' + data.id + '"' +
+                    '                     style="background-image: url("/assets/img/icons/heart.png");"\n' +
+                    '                     onclick="addProductToWishList(' + data.id + ')" class="action wishlist"></div>'
+            } else {
+                html += '                <div id="wish_list_' + data.id + '" onclick="addProductToWishList(' + data.id + ')"' +
+                    '                     class="action wishlist"></div>\n'
+            }
+            html += '        </div>\n' +
+                '    </div>\n' +
+                '</div>\n'
+            return html;
+        }
+
+    </script>
+
+
+
+
+
+
+</body></html>
